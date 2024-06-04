@@ -1,0 +1,120 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.element ::before{
+ content: '';
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-image: url('fgfcg.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ opacity: 0.4;
+ z-index: -1;
+ page-break-after: always;
+
+}
+
+footer{
+    border-top: 2px black solid;
+    margin-top: 100px;
+}
+
+.footertext{
+    text-align: center;
+    font-weight: bolder;
+}
+header{
+    text-align: center;
+    font-size: xx-large;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    height:100px;
+
+}  
+
+a{
+    text-decoration: none;
+    position: relative;
+    padding: 5%;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    top: 30px;
+}
+
+#logo{
+    background-image: url(Coat_of_Arms_of_Australia.svg.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.element p {
+text-align: center;
+font-size: 60px;
+font-weight: 900;
+margin-top: 100px;
+margin-left: -900px;
+font-style: italic;
+}
+.text p{
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 900;
+}
+.power{
+    margin-top: 150px;
+}
+
+
+.power img{
+    width: 100%;
+    max-width: 400px;
+    height: 50%;
+    border-radius: 10px;
+}
+.power p{
+    font-weight: 900;
+    margin-left: 600px;
+    margin-top: -250px;
+}
+.world img{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+.world p{
+    margin-left: 600px;
+    font-weight: 900;
+    margin-top: -250px;
+}
+
+
+@media screen and (max-width: 700px){
+    
+    header{
+        font-size: large;
+    }
+
+    a{
+        padding: 3%;
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+}

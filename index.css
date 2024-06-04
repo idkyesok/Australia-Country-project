@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+}
+header{
+    text-align: center;
+    font-size: xx-large;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width: 100%;
+
+}  
+
+header.sticky{
+    background-color: white;
+    height:100px;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+  }
+
+footer{
+    border-top: 2px black solid;
+}
+
+.footertext{
+    text-align: center;
+    font-weight: bolder;
+}
+
+a{
+    text-decoration: none;
+    position: relative;
+    padding: 5%;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    top: 30px;
+}
+
+#logo{
+    background-image: url(Coat_of_Arms_of_Australia.svg.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.gridcontainer{
+    display: grid;
+    grid-template-rows: 400px 400px 350px 200px;
+    grid-template-columns: 3fr 4fr 3fr;
+    gap: 5%;
+    margin: 5%;
+}
+
+
+.grid{
+    font-size: x-large;
+
+}
+
+#intro1{
+    grid-row: 1;
+    grid-column: 1/3;
+}
+
+#introflag1{
+    grid-row: 1;
+    grid-column: 3/4;
+    background-image: url(https://hellostudy.com.br/ha/wp-content/uploads/2020/12/Curiosidades-Hello-Study-Intercambio-Australia.png);
+    background-size: 80%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+#intro2{
+    grid-row: 2;
+    grid-column: 2/4;
+}
+
+#introflag2{
+    grid-row: 2;
+    grid-column: 1/2;
+    background-image: url(https://images.saymedia-content.com/.image/t_share/MTc0NjQ2MTM0ODk4MzA0Nzgz/why-great-britain-colonized-australia.jpg);
+    background-size: 80%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+#intro3{
+    grid-row: 3;
+    grid-column: 1/3;
+}
+
+#introflag3{
+    grid-row: 3;
+    grid-column: 3/4;
+    background-image: url(https://media.istockphoto.com/id/98201918/photo/small-koala-sitting-on-white-background.jpg?s=612x612&w=0&k=20&c=3mvBBkGNA-wUFbgSmh9FsjQIIYyl9pQaIxvW7Qj66VA=);
+    background-size: 80%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+
+.gridcontainer2{
+    display: grid;
+    grid-template-rows: 260px 350px;
+    grid-template-columns: 3fr 4fr 3fr;
+    gap: 5%;
+    margin: 5%;
+}
+
+#intro4{
+    grid-row: 1;
+    grid-column: 2/4;
+}
+
+#introflag4{
+    grid-row: 1;
+    grid-column: 1/2;
+    background-image: url(https://static1.simpleflyingimages.com/wordpress/wp-content/uploads/2023/03/206220863_32fe2b4244_o.jpg);
+    background-size: 80%;
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+}
+
+#intro5{
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+#introflag5{
+    grid-row: 2;
+    grid-column: 3/4;
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/350251638.jpg?k=464e88fb66ce31a744560208a49711e82df391116f0767f92fee8116b2d56c4a&o=&hp=1);
+    background-size: 80%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 1000px)
+{
+    .gridcontainer{
+        grid-template-rows: 600px 600px 550px 300px;
+    }
+
+    .gridcontainer2{
+        grid-template-rows: 460px 650px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .gridcontainer, .gridcontainer2{
+        grid-template-columns: 1fr;
+    }
+
+    .gridcontainer{
+        grid-template-rows: 800px 250px 600px 250px 1100px 500px;
+
+    }
+
+    
+
+    .gridcontainer2{
+        grid-template-rows: 500px 300px 600px 300px;
+
+    }
+
+
+    #intro1, #intro2, #intro3, #intro4, #intro5, #introflag1, #introflag2, #introflag3, #introflag4, #introflag5 {
+        grid-column: 1;
+    }
+
+    #intro1{
+        grid-row: 1;
+    }
+
+    footer{
+        margin-top: 200px;
+    }
+
+    header{
+        font-size: large;
+    }
+
+    a{
+        padding: 3%;
+    }
+
+    #introflag1{
+        grid-row: 2;
+    }
+
+    #intro2{
+        grid-row: 3;
+    }
+
+    #introflag2{
+        grid-row: 4;
+    }
+
+    #intro3{
+        grid-row: 5;
+    }
+
+    #introflag3{
+        display: none;
+    }
+
+    #intro4{
+        grid-row: 1;
+    }
+
+    #introflag4{
+        grid-row: 2;
+    }
+
+    #intro5{
+        grid-row: 3;
+    }
+
+    #introflag5{
+        grid-row: 4;
+    }
+}
